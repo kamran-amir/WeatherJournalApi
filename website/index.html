@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <title>Weather Journal API</title>
+</head>
+<body>
+     
+    <div class="container">
+        <div class="header">
+            <h1>Weather Journal API</h1>
+        </div>
+
+    
+            <div class="contentLeft">
+                  <div class="card">
+                    <div class="zipDiv">
+                        <label for="inputZip" class="title">Enter Zip Code</label>
+                        <input type="text" id="inputZip" placeholder="Enter ZipCode">
+                    </div>
+
+                    <div class="feeling">
+                        <label for="inputZip" class="title">How are you feeling today</label>
+                        <textarea name="feeling" id="feeling" cols="30" rows="10"></textarea>
+                        <input id="generate" class="submit" type="submit" value ="GENERATE">
+                    </div>
+                  </div>
+
+                
+            </div>
+            <div class="contentRight">
+                  <div class="contentCard2">
+                        <h1>Most Recent Entry</h1>
+                        <div id="entryHolder">
+                            <div id="date"></div>
+                            <div id="temp"></div>
+                            <div id="content"></div>
+                          </div>
+                  </div>
+            </div>
+
+            <div class="footer">
+                <p>Design by @KamranAmir</p>
+            </div>
+        
+    </div>
+
+    
+    
+
+     <script src="app.js"></script>
+</body>
+</html>
